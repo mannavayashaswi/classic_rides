@@ -14,7 +14,7 @@ import MyBookings from "./pages/MyBookings";
 import "./styles.css";
 
 function App() {
-  return <AuthProvider><BrowserRouter><Navbar/><Routes>
+  return <AuthProvider><BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}><Navbar/><Routes>
     <Route path="/" element={<Home/>}/>
     <Route path="/collection" element={<Collection/>}/>
     <Route path="/cars/:id" element={<CarDetails/>}/>
